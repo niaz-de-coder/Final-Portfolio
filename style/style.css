@@ -1,0 +1,91 @@
+.nav-logo{
+    width: 5vw;
+}
+.hero-img{
+    width: 50vw;
+}
+.hero-text{
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(139,139,139,1) 100%);
+    color: transparent;
+    background-clip: text;
+    font-size: 18vw;
+}
+.hero-text-div{
+    height: 30vw;
+}
+body{
+    padding-top: 12vw;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+.hero-div{
+    padding-top: 5vw;
+}
+.soc-icon{
+    font-size: 2vw;
+    color: #fffffe;
+}
+.fbhover:hover{
+    color: #1877F2;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.instahover:hover{
+    color: #ee2a7b;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.discordhover:hover{
+    color: #738ADB;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.linkedinhover:hover{
+    color: #1877F2;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.telehover:hover{
+    color: #1877F2;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.whatshover:hover{
+    color: #25D366;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.ghhover:hover{
+    color: #000001;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.hero-con{
+    height: 10vw;
+}
+.hero-name{
+    font-size: 3vw;
+}
+.hero-desig{
+    font-size: 1.5vw;
+}
+@media (max-width:300px) {
+    body{
+        padding-top: 20vw;
+    }
+}
+@media (max-width:227px) {
+    body{
+        padding-top: 60vw;
+    }
+}
+.nav-link{
+    font-size: 1.5vw !important;
+}
+.navbar-brand{
+    font-size: 1.5vw !important;
+}
+.nav-item{
+    text-align: center;
+    width: 8vw;
+}
