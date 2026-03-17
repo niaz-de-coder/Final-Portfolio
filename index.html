@@ -29,12 +29,123 @@
             opacity: 0;
             transform: translateY(20px);
         }
+
+        /* Ensure banner images fit perfectly */
+        .banner-img {
+            width: 100%;
+            height: 12rem; /* Equivalent to h-48 */
+            object-fit: cover;
+            object-position: top;
+        }
     </style>
 </head>
 <body class="text-slate-800 font-sans antialiased min-vh-100 py-5">
 
     <div class="container">
         <div class="flex flex-col md:flex-row justify-between items-center mb-12 gap-4">
+            <a href="https://niazdecoder.netlify.app" class="btn btn-dark px-4 py-2 rounded-full shadow-sm hover:shadow-md transition-all flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                </svg>
+                Back to Main
+            </a>
+            
+            <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight text-center">
+                Template Showcase
+            </h1>
+            
+            <div class="hidden md:block w-[130px]"></div>
+        </div>
+
+        <div class="row g-5 justify-content-center">
+            
+            <div class="col-12 col-md-6 col-lg-4 template-card">
+                <div class="card h-100 border-0 shadow-sm card-hover rounded-2xl overflow-hidden bg-white">
+                    <img src="assets/ban1.png" alt="Template 1 Banner" class="banner-img">
+                    <div class="card-body p-6 flex flex-col justify-between">
+                        <div>
+                            <h5 class="card-title text-xl font-bold text-slate-900 mb-2">Portfolio Design 01</h5>
+                            <p class="card-text text-slate-500 mb-4">A modern and clean layout focusing on typography and whitespace.</p>
+                        </div>
+                        <a href="https://niazdecoderportfoliotemp1.netlify.app" class="btn btn-primary w-100 rounded-lg py-2 font-semibold tracking-wide">Live Preview</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 template-card">
+                <div class="card h-100 border-0 shadow-sm card-hover rounded-2xl overflow-hidden bg-white">
+                    <img src="assets/ban2.png" alt="Template 2 Banner" class="banner-img">
+                    <div class="card-body p-6 flex flex-col justify-between">
+                        <div>
+                            <h5 class="card-title text-xl font-bold text-slate-900 mb-2">Portfolio Design 02</h5>
+                            <p class="card-text text-slate-500 mb-4">Vibrant colors and bold sections to make your projects stand out.</p>
+                        </div>
+                        <a href="https://niazdecoderportfoliotemp1.netlify.app" class="btn btn-primary w-100 rounded-lg py-2 font-semibold tracking-wide">Live Preview</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 template-card">
+                <div class="card h-100 border-0 shadow-sm card-hover rounded-2xl overflow-hidden bg-white">
+                    <img src="assets/ban3.png" alt="Template 3 Banner" class="banner-img">
+                    <div class="card-body p-6 flex flex-col justify-between">
+                        <div>
+                            <h5 class="card-title text-xl font-bold text-slate-900 mb-2">Portfolio Design 03</h5>
+                            <p class="card-text text-slate-500 mb-4">A professional and sleek UI built for corporate and freelance use.</p>
+                        </div>
+                        <a href="https://niazdecoderportfoliotemp1.netlify.app" class="btn btn-primary w-100 rounded-lg py-2 font-semibold tracking-wide">Live Preview</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 template-card">
+                <div class="card h-100 border-0 shadow-sm card-hover rounded-2xl overflow-hidden bg-white">
+                    <img src="assets/ban4.png" alt="Template 4 Banner" class="banner-img">
+                    <div class="card-body p-6 flex flex-col justify-between">
+                        <div>
+                            <h5 class="card-title text-xl font-bold text-slate-900 mb-2">Portfolio Design 04</h5>
+                            <p class="card-text text-slate-500 mb-4">Creative and dynamic layout with engaging visual hierarchy.</p>
+                        </div>
+                        <a href="https://niazdecoderportfoliotemp1.netlify.app" class="btn btn-primary w-100 rounded-lg py-2 font-semibold tracking-wide">Live Preview</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 template-card">
+                <div class="card h-100 border-0 shadow-sm card-hover rounded-2xl overflow-hidden bg-white">
+                    <img src="assets/ban5.png" alt="Template 5 Banner" class="banner-img">
+                    <div class="card-body p-6 flex flex-col justify-between">
+                        <div>
+                            <h5 class="card-title text-xl font-bold text-slate-900 mb-2">Portfolio Design 05</h5>
+                            <p class="card-text text-slate-500 mb-4">Dark mode inspired minimalist design for a sophisticated look.</p>
+                        </div>
+                        <a href="https://niazdecoderportfoliotemp1.netlify.app" class="btn btn-dark w-100 rounded-lg py-2 font-semibold tracking-wide">Live Preview</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const cards = document.querySelectorAll('.template-card');
+            
+            cards.forEach((card, index) => {
+                const delay = index * 150; 
+                
+                setTimeout(() => {
+                    card.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, delay);
+            });
+        });
+    </script>
+</body>
+</html>        <div class="flex flex-col md:flex-row justify-between items-center mb-12 gap-4">
             <a href="https://niazdecoder.netlify.app" class="btn btn-dark px-4 py-2 rounded-full shadow-sm hover:shadow-md transition-all flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
